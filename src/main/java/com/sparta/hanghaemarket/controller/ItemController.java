@@ -32,7 +32,6 @@ public class ItemController {
 
     @PostMapping("/post")
     public ItemResponseDto createItem(@RequestBody ItemRequestDto itemRequestDto){
-        System.out.println(itemRequestDto.getContent());
         return itemService.createItem(itemRequestDto);
     }
 

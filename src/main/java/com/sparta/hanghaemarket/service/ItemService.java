@@ -40,7 +40,7 @@ public class ItemService {
     public ItemResponseDto updateItem(Long id, ItemRequestDto itemRequestDto) {
         Item item = findItem(id);
 
-        item.setTitle(item.getTitle());
+        item.setTitle(itemRequestDto.getTitle());
         item.setContent(itemRequestDto.getContent());
         item.setPrice(itemRequestDto.getPrice());
         item.setUsername(itemRequestDto.getUsername());
